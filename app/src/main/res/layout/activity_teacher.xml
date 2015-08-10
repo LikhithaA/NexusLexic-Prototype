@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.likhitha.nexuslexicapp.StudentActivity"
+    android:orientation="vertical"
+    android:background="@drawable/teacheractivitybg">
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:id="@+id/teacher_info_bar">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <TextView android:text="Teacher's Username" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+        <TextView android:text="Teacher's School" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView android:text="Language They Teach" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profilepic"
+            android:id="@+id/profile_pic"
+            android:layout_marginLeft="45dp"/>
+
+</LinearLayout>
+
+
+
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="Speaking Pals"
+            android:layout_below="@+id/teacher_info_bar"
+            android:id="@+id/speaking_pals_button"
+            android:background="@color/white"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/teacher_info_bar"
+        android:layout_toRightOf="@+id/speaking_pals_button"
+        android:text="Report Cards and Progress"
+        android:id="@+id/report_cards_button"
+        android:background="@color/white"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Rewards and Nexicon Store"
+        android:layout_below="@+id/speaking_pals_button"
+        android:id="@+id/rewards_button"
+        android:background="@color/white"/>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Settings and Profile"
+        android:layout_below="@+id/report_cards_button"
+        android:layout_toRightOf="@+id/rewards_button"
+        android:id="@+id/settings"
+        android:background="@color/white"/>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Homework"
+        android:layout_below="@+id/rewards_button"
+        android:id="@+id/homework"
+        android:background="@color/white"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Students"
+        android:layout_below="@+id/settings"
+        android:layout_toRightOf="@+id/homework"
+        android:background="@color/white"
+        />
+
+</RelativeLayout>
